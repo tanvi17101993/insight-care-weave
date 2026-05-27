@@ -56,7 +56,7 @@ function Patient360() {
           <div className="mt-2 flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-3">
               <div className="size-12 rounded-full bg-primary/10 text-primary grid place-items-center font-semibold">
-                {patient.name.split(" ").map(s => s[0]).slice(0, 2).join("")}
+                {patient.name.split(" ").map((s: string) => s[0]).slice(0, 2).join("")}
               </div>
               <div>
                 <div className="flex items-center gap-2">
