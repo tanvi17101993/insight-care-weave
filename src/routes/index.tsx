@@ -183,9 +183,9 @@ function AcuityOverview() {
   );
 }
 
-function Mini({ label, value, tone }: { label: string; value: string; tone: keyof typeof SEVERITY_BG_SOFT }) {
+function Mini({ label, value, tone }: { label: string; value: string; tone: "stable" | "watch" | "risk" | "critical" }) {
   return (
-    <div className={`flex items-center justify-between px-2.5 py-2 rounded-md ${SEVERITY_BG_SOFT[tone as any]}`}>
+    <div className={`flex items-center justify-between px-2.5 py-2 rounded-md ${SEVERITY_BG_SOFT[tone]}`}>
       <span>{label}</span><span className="font-semibold tabular-nums">{value}</span>
     </div>
   );
