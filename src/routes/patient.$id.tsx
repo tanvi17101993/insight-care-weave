@@ -1,17 +1,17 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { AppShell } from "../../components/layout/AppShell";
-import { Card } from "../../components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
-import { Button } from "../../components/ui/button";
-import { Badge } from "../../components/ui/badge";
-import { Separator } from "../../components/ui/separator";
-import { ScrollArea } from "../../components/ui/scroll-area";
-import { SeverityBadge } from "../../components/clinical/SeverityBadge";
-import { MiniWaveform } from "../../components/clinical/MiniWaveform";
+import { AppShell } from "../components/layout/AppShell";
+import { Card } from "../components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
+import { Separator } from "../components/ui/separator";
+import { ScrollArea } from "../components/ui/scroll-area";
+import { SeverityBadge } from "../components/clinical/SeverityBadge";
+import { MiniWaveform } from "../components/clinical/MiniWaveform";
 import {
   getHospital, getPatient, PATIENTS, SAMPLE_LABS, SAMPLE_MEDS, SAMPLE_TIMELINE,
-} from "../../lib/mock-data";
-import { useLiveVitals } from "../../hooks/use-live-vitals";
+} from "../lib/mock-data";
+import { useLiveVitals } from "../hooks/use-live-vitals";
 import {
   Activity, AlertTriangle, BedDouble, Calendar, ChevronLeft, ChevronRight,
   ClipboardList, FileText, FlaskConical, HeartPulse, MessageSquare, Pill,
